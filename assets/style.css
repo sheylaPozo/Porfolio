@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  main {
+    background-image: url("../img/header-shapes\ mobile.png");
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a {
+    margin-top: 58px;
+    margin-left: 24px;
+    color: #6070ff;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .fa-bars {
+    margin-top: 58px;
+    margin-right: 24px;
+    color: #6070ff;
+  }
+  
+  section {
+    margin: 128px 24px 136px 24px;
+  }
+  
+  .section-title {
+    color: #172b4d;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 52px;
+  }
+  
+  section p {
+    margin-top: 12px;
+    color: #344563;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  section .main-text {
+    color: #7f8cff;
+    margin-top: 12px;
+  }
+  
+  section ul {
+    margin-top: 12px;
+    display: flex;
+    gap: 20px;
+  }
+  
