@@ -46,7 +46,7 @@ The main purpose of the project [Portfolio](https://sheylapozo.github.io/Porfoli
 Contributions, issues, and feature requests are welcome!
 
 
-Feel free to check the [issues page](https://github.com/sheylaPozo/Portfolio/issues).
+Feel free to check the [issues page](https://github.com/sheylaPozo/Porfolio/issues).
 
 
 ## 💗 Show your support
