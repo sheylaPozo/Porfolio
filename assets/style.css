@@ -11,11 +11,6 @@ a {
   text-decoration: none;
 }
 
-main {
-  background-image: url("../img/header-shapes\ mobile.png");
-  background-repeat: no-repeat;
-}
-
 header {
   position: fixed;
   background-color: #fff;
@@ -24,6 +19,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-image: url("../img/header-shapes\ mobile.png");
 }
 
 header a {
