@@ -12,7 +12,6 @@
   }
   
   main {
-    background-image: url("../img/header-shapes\ mobile.png");
     background-repeat: no-repeat;
   }
   
@@ -24,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: url("../img/header-shapes\ mobile.png");
   }
   
   header a {
