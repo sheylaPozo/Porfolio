@@ -84,18 +84,6 @@ section ul {
   gap: 20px;
 }
 
-.btn-lg {
-  color: #6070ff;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  background-color: #ebebff;
-  font-family: "Poppins", sans-serif;
-  border-radius: 8px;
-  padding: 4px 12px;
-}
-
 .btn-project {
   color: #396df2;
   background-color: #fff;
