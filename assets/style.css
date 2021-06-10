@@ -53,9 +53,6 @@ header a {
   margin: 0 24px 136px 24px;
   padding-top: 128px;
   padding-bottom: 138px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .section-title {
