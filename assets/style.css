@@ -139,7 +139,7 @@ section ul {
   box-sizing: border-box;
   border-radius: 16px;
   padding: 16px;
-  background-color:#ffffff ;
+  background-color:"#fff"; 
 }
 
 .card img {
