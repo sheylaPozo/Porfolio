@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+.btn-project {
+  color: #396df2;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 14px;
+  outline: none;
+}
+
 ul {
   list-style: none;
 }
@@ -13,7 +28,7 @@ a {
 }
 
 body {
-  background-color: #f7f7f9;
+  background-color:#f7f7f9;
   position: relative;
 }
 
@@ -82,21 +97,6 @@ section ul {
   margin-top: 12px;
   display: flex;
   gap: 20px;
-}
-
-.btn-project {
-  color: #396df2;
-  background-color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  border: 1px solid #7f8cff;
-  border-radius: 8px;
-  padding: 12px;
-  margin-top: 14px;
-  outline: none;
 }
 
 .btn-project:hover {
