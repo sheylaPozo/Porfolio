@@ -164,8 +164,9 @@ section ul {
 }
 
 .card .butonns-languages {
-  display: flex;
-  gap: 8px;
+  /* display: flex;
+  gap: 8px; */
+  float: none;
 }
 
 .btn-lg {
