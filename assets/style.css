@@ -302,8 +302,8 @@ textarea {
 }
 
 ::placeholder {
-   opacity: 1;
-   font-size: 12px;
+  opacity: 1;
+  font-size: 22px;
 }
 
 #message {
