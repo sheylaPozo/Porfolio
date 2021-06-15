@@ -301,6 +301,11 @@ textarea {
   resize: none;
 }
 
+::placeholder {
+   opacity: 1;
+   font-size: 6px;
+}
+
 #message {
   height: 170px;
 }
