@@ -300,11 +300,10 @@ textarea {
   resize: none;
 }
 
-.btn-contact {
-  width: 48%;
-}
-
-
 #message {
   height: 170px;
+}
+
+.btn-contact {
+  width: 48%;
 }
