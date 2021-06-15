@@ -165,7 +165,8 @@ section ul {
 }
 
 .card .butonns-languages {
-  float: inherit;
+  display: flex;
+  gap: 8px;
 }
 
 .btn-lg {
@@ -256,7 +257,7 @@ section ul {
 }
 
 .contact {
-  background-image: url("../images/contact-form-bg-mobile-size.png");
+  background-image: url("../images/contact-form-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 147px 21px;
