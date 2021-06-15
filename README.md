@@ -34,7 +34,7 @@ The main purpose of the project [Portfolio](https://sheylapozo.github.io/Porfoli
 
 ## 💗 Author:
 
-👤 **Sheyla Pozo**💖
+👤 **Sheyla Pozo** 💖
 
 - Github:[Sheyla Pozo](https://github.com/sheylaPozo)
 - Linkedin: [Sheyla Pozo](https://www.linkedin.com/in/sheypozo/)
@@ -42,7 +42,7 @@ The main purpose of the project [Portfolio](https://sheylapozo.github.io/Porfoli
 
 ## 💛 Collaborators:
 
-👤 **Chawanzi Ng'uni**
+👤 **Chawanzi Ng'uni** ⭐
 
 - GitHub: [@chaw-bot](https://github.com/chaw-bot)
 - Twitter: [@chaw36422087](https://twitter.com/chaw36422087)
