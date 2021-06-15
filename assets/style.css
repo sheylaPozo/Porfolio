@@ -249,3 +249,20 @@ section ul {
   padding-right: 30px;
   color: #acb7c3;
 }
+
+.contact-section {
+  padding-top: 113.85px;
+  background-color: #fff;
+}
+
+.contact {
+  background-image: url("../images/contact-form-bg-mobile-size.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 147px 21px;
+  background-color: #6070ff;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 45px;
+  border-top-left-radius: 80px;
+}
