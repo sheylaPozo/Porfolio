@@ -275,6 +275,7 @@ section ul {
   line-height: 52px;
   text-align: center;
   padding-top: 103px;
+  padding-bottom: inherit;
 }
 
 .contact-section-text-content {
