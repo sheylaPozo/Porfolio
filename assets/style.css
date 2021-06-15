@@ -19,20 +19,6 @@
   outline: none;
 }
 
-button {
-  appearance: auto;
-  text-rendering: auto;
-  word-spacing: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: center;
-  align-items: flex-start;
-  cursor: default;
-  font: 400 13.3333px Arial;
-}
-
 ul {
   list-style: none;
 }
