@@ -291,3 +291,15 @@ section ul {
   gap: 20px;
   margin-top: 58px;
 }
+
+.contact input,
+textarea {
+  padding: 15px 38px 15px 16px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  resize: none;
+}
+
+#message {
+  height: 170px;
+}
