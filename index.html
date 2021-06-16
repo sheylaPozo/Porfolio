@@ -19,8 +19,13 @@
   </head>
   <body>
     <header>
-      <a href="#">My logo</a>
+      <a class="my-logo" href="#">My logo</a>
       <nav>
+            <ul class="header-links">
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         <i class="fas fa-bars"></i>
       </nav>
     </header>
@@ -34,7 +39,7 @@
           me.
         </p>
         <a href="#" class="main-text">LET’S CONNECT</a>
-        <ul>
+         <ul class="social-media">
           <li>
             <a href="https://twitter.com/sheyPozo"
               ><img src="./img/twitter.png" alt="Twitter"
@@ -59,18 +64,19 @@
         </ul>
       </section>
     </main>
-    <section class="cards-project">
+      <section class="cards-project">
       <ul class="cards-project-list">
         <li class="card">
-          <img src="img/img1.png" alt="Avocode" />
-          <h2 class="card-title">TONIC</h2>
-          <p class="card-description">
-            CANOPY <span> &#9679; Back End Dev &#9679; 2021</span>
-          </p>
-          <p class="card-text-content">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
-          </p>
+          <img class="card-image1" src="img/img1.png" alt="Avocode" />
+          <div class="card-content">
+            <h1 class="card-title">TONIC</h1>
+            <p class="card-description">
+              CANOPY <span> &#9679; Back End Dev &#9679; 2021 </span>
+            </p>
+            <p class="card-text-content">
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required.
+            </p>
           <ul class="butonns-languages">
             <li class="btn-lg">html</li>
             <li class="btn-lg">css</li>
@@ -94,6 +100,7 @@
             <li class="btn-lg">javaScript</li>
           </ul>
           <button type="button" class="btn-project">See Project</button>
+          </div>
         </li>
         <li class="card">
           <img src="img/img3.png" alt="Yoga" />
@@ -109,6 +116,7 @@
             <li class="btn-lg">html</li>
             <li class="btn-lg">css</li>
             <li class="btn-lg">javaScript</li>
+            <li class="btn-lg ruby-on-rails">Ruby on rails</li>
           </ul>
           <button type="button" class="btn-project">See Project</button>
         </li>
