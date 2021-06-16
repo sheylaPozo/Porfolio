@@ -50,6 +50,15 @@ header {
   justify-content: space-between;
 }
 
+header .my-logo {
+  margin-left: 24px;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 header a {
   margin-left: 24px;
   color: #6070ff;
@@ -65,11 +74,8 @@ header a {
 }
 
 .section-top {
-  margin: 0 24px 136px 24px;
   padding-top: 128px;
   padding-bottom: 138px;
-  display: flex;
-  flex-direction: column;
 }
 
 .section-title {
@@ -78,6 +84,7 @@ header a {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
+  word-wrap: break-word;
 }
 
 section p {
@@ -168,6 +175,10 @@ section ul {
   gap: 8px;
 }
 
+.ruby-on-rails {
+  display: none;
+}
+
 .btn-lg {
   color: #6070ff;
   font-weight: 500;
@@ -206,6 +217,10 @@ section ul {
 
 .about-myself .skills p {
   margin-top: 0;
+}
+
+.lg-dropdown p {
+  padding-left: 16px;
 }
 
 .skills {
