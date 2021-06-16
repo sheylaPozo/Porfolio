@@ -33,7 +33,7 @@ body {
 }
 
 main {
-  background-image: url("../img/header-shapes\ mobile.png");
+  background-image: url("../img/shapes\ mobile.png");
   background-repeat: no-repeat;
   background-color: #fff;
   border-bottom-left-radius: 80px;
@@ -312,4 +312,255 @@ textarea {
 
 .btn-contact {
   width: 48%;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    background-image: url("../img/shapes-desktop.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 288px 24px 255px 24px;
+    border-bottom-left-radius: 150px;
+  }
+
+  header nav {
+    display: flex;
+  }
+
+  header .my-logo {
+    margin-left: 154px;
+  }
+
+  header .my-logo:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+
+  header nav .fa-bars {
+    display: none;
+  }
+
+  header nav ul {
+    display: flex;
+    gap: 52px;
+    padding-right: 154px;
+  }
+
+  header nav ul li a {
+    color: #344563;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    position: relative;
+  }
+
+  header nav ul li a::after {
+    content: "]";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-weight: 500;
+    color: #344563;
+    font-size: 15px;
+    opacity: 0;
+  }
+
+  header nav ul li a::before {
+    content: "[";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-weight: 500;
+    color: #344563;
+    font-size: 15px;
+    opacity: 0;
+  }
+
+  header nav ul li a:hover::before {
+    left: -10px;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  header nav ul li a:hover::after {
+    right: -10px;
+    transition: 0.5s;
+    opacity: 1;
+  }
+
+  .section-top {
+    margin: 0;
+    padding: 359px 260px 255px 260px;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .cards-project-list {
+    padding: 142px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    animation: rotation 5s;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .card:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 16px;
+    max-width: 1156px;
+  }
+
+  .card:nth-child(even) img {
+    padding: 24px 22px 24px 0;
+  }
+
+  .card:nth-child(even) .card-content {
+    padding: 48px 0 0 48px;
+  }
+
+  .card:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    max-width: 1156px;
+  }
+
+  .card:nth-child(odd) img {
+    padding: 24px 0 24px 24px;
+  }
+
+  .card:nth-child(odd) .card-content {
+    padding: 48px 46px 0 0;
+  }
+
+  .card .card-image1 {
+    content: url("../img/desktop-img1.png");
+  }
+
+  .card .card-image2 {
+    content: url("../img/desktop-img2.png");
+  }
+
+  .card .card-image3 {
+    content: url("../img/desktop-img3.png");
+  }
+
+  .card .card-image4 {
+    content: url("../img/desktop-img4.png");
+  }
+
+  .card .card-content .card-description,
+  .card .card-content .card-description span {
+    font-weight: 400;
+  }
+
+  .card .butonns-languages {
+    margin-top: 24px;
+  }
+
+  .card .ruby-on-rails {
+    display: block;
+  }
+
+  .card .btn-project {
+    cursor: url("../img/handcursor.png"), auto;
+    margin-top: 50px;
+  }
+
+  .card .btn-project-pressed {
+    color: #fff;
+    background-color: #2230d2;
+  }
+
+  .about-myself-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 114px 182px 0 142px;
+  }
+
+  .about-myself .section-title {
+    padding: 0;
+  }
+
+  .skills .fa-chevron-down,
+  .skills .fa-chevron-right {
+    padding-right: 0;
+  }
+
+  .lg-dropdown {
+    flex-direction: row;
+  }
+
+  .lg-dropdown-description {
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    border-radius: 2px;
+  }
+
+  .about-myself .lg-dropdown-description img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .lg-dropdown-description p {
+    padding-left: 5px;
+  }
+
+  .skills-border {
+    padding-top: 0;
+  }
+
+  footer .contact form {
+    align-items: center;
+  }
+
+  .contact {
+    background-image: url("../img/footer-desktop.png");
+    background-position: center;
+    border-top-left-radius: 150px;
+    padding: 142px 24px 127px 24px;
+  }
+
+  footer .contact-section-text-content {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact input,
+  textarea {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+  }
+
+  footer form .btn-contact {
+    width: 15%;
+  }
 }
