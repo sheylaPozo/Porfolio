@@ -215,12 +215,12 @@ section ul {
   margin-right: 12px;
 }
 
-.about-myself .skills p {
-  margin-top: 0;
-}
-
 .lg-dropdown p {
   padding-left: 16px;
+}
+
+.about-myself .skills p {
+  margin-top: 0;
 }
 
 .skills {
