@@ -383,13 +383,13 @@ textarea {
     opacity: 0;
   }
 
-  header nav ul li a:hover::before{
+  header nav ul li a:hover::before {
     left: -10px;
     transition: 0.5s;
     opacity: 1;
   }
 
-  header nav ul li a:hover::after{
+  header nav ul li a:hover::after {
     right: -10px;
     transition: 0.5s;
     opacity: 1;
