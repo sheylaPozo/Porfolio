@@ -50,15 +50,6 @@ header {
   justify-content: space-between;
 }
 
-header .my-logo {
-  margin-left: 24px;
-  color: #6070ff;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-}
-
 header a {
   margin-left: 24px;
   color: #6070ff;
@@ -74,8 +65,11 @@ header a {
 }
 
 .section-top {
+  margin: 0 24px 136px 24px;
   padding-top: 128px;
   padding-bottom: 138px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-title {
@@ -84,13 +78,13 @@ header a {
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
-  word-wrap: break-word;
 }
 
 section p {
   margin-top: 12px;
   color: #344563;
   font-family: "Poppins", sans-serif;
+  width: 90%;
   font-size: 16px;
   line-height: 24px;
 }
@@ -175,10 +169,6 @@ section ul {
   gap: 8px;
 }
 
-.ruby-on-rails {
-  display: none;
-}
-
 .btn-lg {
   color: #6070ff;
   font-weight: 500;
@@ -192,6 +182,7 @@ section ul {
 }
 
 .about-myself {
+  display: flex;
   background-color: #fff;
   border-top-right-radius: 80px;
 }
@@ -210,13 +201,8 @@ section ul {
 
 .skills-container {
   display: flex;
-  flex-direction: column;
   margin-left: 12px;
   margin-right: 12px;
-}
-
-.lg-dropdown p {
-  padding-left: 16px;
 }
 
 .about-myself .skills p {
@@ -331,11 +317,10 @@ textarea {
 
 @media only screen and (min-width: 1024px) {
   main {
-    background-image: url("../img/shapes-desktop.png");
+    background-image: url(../img/shapes-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
-    padding: 288px 24px 255px 24px;
+    padding: 142px 24px 255px 24px;
     border-bottom-left-radius: 150px;
   }
 
@@ -411,8 +396,8 @@ textarea {
   }
 
   .section-top {
-    margin: 0;
-    padding: 359px 260px 255px 260px;
+    margin: 0 auto;
+    width: 60%;
   }
 
   .card {
