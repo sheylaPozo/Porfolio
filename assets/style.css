@@ -76,6 +76,16 @@ header nav ul {
   word-wrap: break-word;
 }
 
+.about-myself-title {
+  color: #172b4d;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  word-wrap: break-word;
+  width: 200px;
+}
+
 section p {
   margin-top: 12px;
   color: #344563;
@@ -124,7 +134,7 @@ section .main-text {
   color: #344563;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 18px;
   line-height: 16px;
   margin-top: 20px;
 }
@@ -140,7 +150,7 @@ section .main-text {
 .card .card-text-content {
   color: #344563;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 24px;
   margin-top: 20px;
 }
@@ -195,12 +205,11 @@ section .main-text {
 .about-myself {
   background-color: #fff;
   border-top-right-radius: 80px;
-  display: flex;
 }
 
 .about-myself-content {
   margin: 0 24px 0 24px;
-  width: 50%;
+  width: 30%;
 }
 
 .about-myself-content .section-title {
@@ -216,6 +225,7 @@ section .main-text {
   flex-direction: column;
   margin-left: 12px;
   margin-right: 12px;
+  width: 45%;
 }
 
 .lg-dropdown p {
@@ -369,7 +379,7 @@ textarea {
     background-size: cover;
     background-size: 90vw 74vh;
     padding: 70px 200px 207px 200px;
-}
+  }
 
   .section-top h1 {
     font-size: 48px;
@@ -383,6 +393,8 @@ textarea {
 
   .card {
     padding: 0;
+    width: 70vw;
+    height: 400px;
   }
 
   .cards-project-list {
@@ -392,9 +404,13 @@ textarea {
     align-items: center;
   }
 
-  .card img {
-    width: 100%;
+  .card-image {
+    width: 50%;
     height: auto;
+  }
+
+  .card-content {
+    width: 50%;
   }
 
   .card:nth-child(even) {
@@ -464,6 +480,12 @@ textarea {
   .card .btn-project-pressed {
     color: #fff;
     background-color: #2230d2;
+  }
+
+  .about-myself {
+    display: flex;
+    padding: 10rem;
+    justify-content: center;
   }
 
   .about-myself-container {
