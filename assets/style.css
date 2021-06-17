@@ -4,21 +4,6 @@
   box-sizing: border-box;
 }
 
-.btn-project {
-  color: #396df2;
-  background-color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  border: 1px solid #7f8cff;
-  border-radius: 8px;
-  padding: 12px;
-  margin-top: 14px;
-  outline: none;
-}
-
 ul {
   list-style: none;
 }
@@ -59,20 +44,6 @@ header .my-logo {
   line-height: 20px;
 }
 
-header a {
-  margin-left: 24px;
-  color: #6070ff;
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 20px;
-}
-
-.fa-bars {
-  margin-right: 24px;
-  color: #6070ff;
-}
-
 section ul {
   margin-top: 12px;
   display: flex;
@@ -83,9 +54,14 @@ header nav ul {
   display: none;
 }
 
+.fa-bars {
+  margin-right: 24px;
+  color: #6070ff;
+}
+
 .section-top {
+  margin: 0 24px 136px 24px;
   padding-top: 128px;
-  padding-bottom: 138px;
 }
 
 .section-title {
@@ -110,34 +86,26 @@ section .main-text {
   margin-top: 12px;
 }
 
-.btn-project:hover {
-  color: #fff;
-  background-color: #6070ff;
-  border: 1px solid #7f8cff;
-}
-
-.btn-project:active {
-  color: #fff;
-  background-color: #2230d2;
-}
-
 .cards-project-list {
-  margin: 114px 24px 114px 24px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 114px;
   display: grid;
   gap: 88px;
 }
 
 .card {
+  background-color: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
   padding: 16px;
-  background-color: #fff;
 }
 
 .card img {
-  width: 100%;
-  height: 220px;
+  max-width: 100%;
+  height: auto;
 }
 
 .card .card-title {
@@ -195,6 +163,32 @@ section .main-text {
   padding: 4px 12px;
 }
 
+.btn-project {
+  color: #396df2;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 14px;
+  outline: none;
+}
+
+.btn-project:hover {
+  color: #fff;
+  background-color: #6070ff;
+  border: 1px solid #7f8cff;
+}
+
+.btn-project:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
 .about-myself {
   background-color: #fff;
   border-top-right-radius: 80px;
@@ -241,20 +235,16 @@ section .main-text {
   font-weight: 500;
 }
 
-.about-myself-content .lg-dropdown-description {
+.lg-dropdown-description {
   display: flex;
   background-color: #f7f7f9;
   padding: 12px 9px 12px 9px;
 }
 
-.about-myself-content .lg-dropdown {
+.lg-dropdown {
   display: flex;
   flex-direction: column;
   gap: 12px;
-}
-
-.about-myself-content .lg-dropdown p {
-  padding-left: 16px;
 }
 
 .skills-border {
@@ -335,12 +325,10 @@ textarea {
 
 @media only screen and (min-width: 1024px) {
   main {
-    background-image: url("../img/shapes-desktop.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    padding: 288px 24px 255px 24px;
+    height: 90vh;
+    background-image: none;
     border-bottom-left-radius: 150px;
+    padding: 100px 24px 0 24px;
   }
 
   header nav {
@@ -349,12 +337,6 @@ textarea {
 
   header .my-logo {
     margin-left: 154px;
-  }
-
-  header .my-logo:hover {
-    transition: 0.5s;
-    transform: scale(1.5);
-    opacity: 0.7;
   }
 
   header nav .fa-bars {
@@ -373,50 +355,25 @@ textarea {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    position: relative;
-  }
-
-  header nav ul li a::after {
-    content: "]";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    font-weight: 500;
-    color: #344563;
-    font-size: 15px;
-    opacity: 0;
-  }
-
-  header nav ul li a::before {
-    content: "[";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    display: block;
-    font-weight: 500;
-    color: #344563;
-    font-size: 15px;
-    opacity: 0;
-  }
-
-  header nav ul li a:hover::before {
-    left: -10px;
-    transition: 0.5s;
-    opacity: 1;
-  }
-
-  header nav ul li a:hover::after {
-    right: -10px;
-    transition: 0.5s;
-    opacity: 1;
   }
 
   .section-top {
     margin: 0;
-    padding: 359px 260px 255px 260px;
+    background-image: url("../img/shapes-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 90vw 74vh;
+    padding: 270px 260px 257px 260px;
+  }
+
+  .section-top h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .section-top p {
+    font-size: 20px;
+    line-height: 28px;
   }
 
   .card {
@@ -433,17 +390,6 @@ textarea {
   .card img {
     width: 100%;
     height: auto;
-    animation: rotation 5s;
-  }
-
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
   }
 
   .card:nth-child(even) {
