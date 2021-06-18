@@ -110,7 +110,7 @@ section .main-text {
   box-sizing: border-box;
   border-radius: 16px;
   padding: 16px;
-  margin: 0px 24px;
+  margin: 1px 24px;
 }
 
 .card-image {
@@ -231,6 +231,13 @@ section .main-text {
   padding-left: 16px;
 }
 
+.skills p {
+  color: #000;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
 .about-myself .skills p {
   margin-top: 0;
 }
@@ -241,13 +248,6 @@ section .main-text {
   align-items: baseline;
   font-size: 20px;
   line-height: 24px;
-}
-
-.skills p {
-  color: #000;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 500;
 }
 
 .lg-dropdown-description {
@@ -325,7 +325,7 @@ textarea {
   font-weight: normal;
   color: #172b4d;
   resize: none;
-  font-family: "Poppins" sans-serif;
+  font-family: sans-serif;
 }
 
 @media screen and (min-width: 992px) {
