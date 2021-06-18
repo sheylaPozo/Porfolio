@@ -481,4 +481,18 @@ textarea {
   .contact-section-text-content {
     width: 43%;
   }
+
+.card-image:hover{
+  animation-duration:3s;
+  animation-name:bounce;
+  animation-iteration-count: 2s;
+}
+@keyframes bounce{
+  from{
+    transform:bounce(0);
+  }
+  to{
+    transform:bounce(10px);
+  }
+}
 }
