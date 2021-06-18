@@ -20,7 +20,7 @@
 
 *💛 Image Preview 💛*
 
-![Demo](https://user-images.githubusercontent.com/54015740/122116193-f0bea780-cdea-11eb-899c-c0fb8f0ed887.png)
+![Demo](https://user-images.githubusercontent.com/54015740/122578337-6445fc00-d019-11eb-9b13-45c3d9967e72.png)
 
 ---
 The main purpose of the project [Portfolio](https://sheylapozo.github.io/Porfolio/) was for me to develop some hands-on work using my previous knowledge working with Html, CSS, and linters, which also serves as practice in documenting my work in a professional way, with the learning objectives of using the best practices in HTML code, semantic HTML tags, CSS selectors in a correct way, CSS box model, to understand Figma designs to create a UI., using Flexbox to place elements in the page, learning how to build a personal portfolio site, as well as how to use images and backgrounds to enhance the look of the website which enhance the experience in programming with HTML and CSS.
