@@ -398,6 +398,7 @@ textarea {
     display: flex;
     padding: 10rem;
     justify-content: center;
+    flex-direction: row;
   }
 
   .about-myself .section-title {
@@ -415,10 +416,6 @@ textarea {
   }
 
   .lg-dropdown {
-    flex-direction: row;
-  }
-
-  .about-myself {
     flex-direction: row;
   }
 
