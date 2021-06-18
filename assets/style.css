@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  background-image: url("../img/shapes\ mobile.png");
+  background-image: url("../img/shapes-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -132,7 +132,7 @@ section .main-text {
 }
 
 .card-info span {
-  font-size: 18px;
+  font-size: 12px;
   line-height: 24px;
   color: #6b778c;
   font-weight: normal;
@@ -369,7 +369,7 @@ textarea {
 
   .section-top {
     margin: 0;
-    background-image: url("../img/shapes-desktop.png");
+    /* background-image: url("../img/shapes-desktop.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 90vw 74vh;
@@ -446,6 +446,9 @@ textarea {
     background-position: center;
     border-top-left-radius: 150px;
     padding: 142px 24px 127px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .swap {
@@ -454,6 +457,7 @@ textarea {
 
   form {
     align-items: center;
+    width: 40%;
   }
 
   .card-image {
@@ -463,6 +467,19 @@ textarea {
 
   input,
   textarea {
+    padding: 15px 38px 15px 16px;
+    border: 1px solid #cfd8dc;
     border-radius: 2px;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #172b4d;
+    resize: none;
+    font-family: sans-serif;
+    width: 100%;
+  }
+
+  .contact-section-text-content {
+    width: 40%;
   }
 }
