@@ -482,12 +482,12 @@ textarea {
     width: 43%;
   }
 
-  /* animation */
   .my-logo:hover {
     animation-duration: 3s;
     animation-name: rotate;
     animation-iteration-count: 2;
   }
+
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
