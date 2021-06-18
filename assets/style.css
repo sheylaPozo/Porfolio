@@ -482,17 +482,36 @@ textarea {
     width: 43%;
   }
 
-.card-image:hover{
-  animation-duration:3s;
-  animation-name:bounce;
-  animation-iteration-count: 2s;
-}
-@keyframes bounce{
-  from{
-    transform:bounce(0);
+  /* animation */
+  .my-logo:hover {
+    animation-duration: 3s;
+    animation-name: rotate;
+    animation-iteration-count: 2;
   }
-  to{
-    transform:bounce(10px);
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(45deg);
+      color: rgb(158, 77, 77);
+    }
+
+    50% {
+      transform: rotate(90deg);
+      color: green;
+    }
+
+    75% {
+      transform: rotate(135deg);
+      color: yellow;
+    }
+
+    100% {
+      transform: rotate(180deg);
+      color: magenta;
+    }
   }
-}
 }
