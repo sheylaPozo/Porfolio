@@ -488,7 +488,6 @@ textarea {
     animation-name: rotate;
     animation-iteration-count: 2;
   }
-  
   @keyframes rotate {
     0% {
       transform: rotate(0deg);
