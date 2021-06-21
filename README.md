@@ -5,7 +5,9 @@
 
 ![Portfolio](https://img.shields.io/github/followers/sheylaPozo?style=social)
 
-# Module 1: "Portfolio" project #3 of Microverse 2.0
+# Module 1: "Portfolio" 
+---
+
 
 > This project is part of Microverse's The Portal part of the curriculum. and it's been built with Html 5 and CSS, as part of Microverse 2.0 curriculum.
 
