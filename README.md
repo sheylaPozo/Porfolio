@@ -19,7 +19,7 @@
 
 *💛 Portfolio Preview image💛*
 
-Mobile version | Desktop version
+Desktop version | Mobile version
 -------------------- | ----------------------
 ![Demo](https://user-images.githubusercontent.com/54015740/122578337-6445fc00-d019-11eb-9b13-45c3d9967e72.png) | ![mobile version capture](https://user-images.githubusercontent.com/54015740/122890216-19720000-d309-11eb-872c-e502bb5a4c94.png)
 
