@@ -182,7 +182,6 @@ section .main-text {
   border-radius: 8px;
   padding: 12px;
   margin-top: 14px;
-  outline: none;
 }
 
 .btn-project:hover {
