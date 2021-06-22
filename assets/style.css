@@ -300,16 +300,6 @@ section .main-text {
   padding-bottom: 25px;
 }
 
-.contact h3 {
-  color: #fff;
-  font-weight: bold;
-  font-size: 55px;
-  line-height: 52px;
-  text-align: center;
-  padding-top: 103px;
-  padding-bottom: 25px;
-}
-
 .contact-section-text-content {
   color: #ebebff;
   font-size: 20px;
@@ -459,6 +449,16 @@ textarea {
     align-items: center;
   }
 
+  .contact h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 52px;
+    text-align: center;
+    padding-top: 103px;
+    padding-bottom: 25px;
+  }
+  
   .swap {
     order: -1;
   }
