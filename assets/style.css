@@ -310,7 +310,6 @@ section .main-text {
   padding-bottom: 25px;
 }
 
-
 .contact-section-text-content {
   color: #ebebff;
   font-size: 20px;
@@ -469,7 +468,7 @@ textarea {
     padding-top: 103px;
     padding-bottom: 25px;
   }
-  
+
   .swap {
     order: -1;
   }
