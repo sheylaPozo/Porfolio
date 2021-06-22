@@ -35,7 +35,7 @@ header {
 
 header .my-logo {
   padding-left: 24px;
-  color: #3D54FF;
+  color: #4255ff;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -91,7 +91,7 @@ section p {
 }
 
 section .main-text {
-  color: #7f8cff;
+  color: #293eff;
   margin-top: 12px;
 }
 
@@ -154,7 +154,7 @@ section .main-text {
   padding: 4px 12px;
   border-radius: 8px;
   background-color: #ebebff;
-  color: #6070ff;
+  color: #1F35FF;
   font-weight: 500;
   font-size: 12px;
   letter-spacing: 0.03em;
@@ -284,7 +284,7 @@ section .main-text {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 147px 21px;
-  background-color: #6070ff;
+  background-color: #4255FF;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 45px;
