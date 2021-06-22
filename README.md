@@ -1,5 +1,5 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
-![My app](https://img.shields.io/badge/myapp-blueviolet)
+---
 ![Portfolio](https://img.shields.io/github/followers/sheylaPozo?style=social)
 
 ## My Portfolio 💖
