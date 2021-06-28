@@ -17,6 +17,39 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.menu-style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: #1b31f0a2;
+}
+
+.menu-style i {
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 62px;
+  padding-right: 38px;
+}
+
+.menu-style .menu-list {
+  margin-top: 40px;
+  padding-left: 28px;
+}
+
+.menu-style a {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 64px;
+}
+
 main {
   background-image: url("../img/shapes-desktop.png");
   background-size: cover;
