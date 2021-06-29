@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +12,6 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G02Q6WTT9Q"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
     function gtag() {
       dataLayer.push(arguments);
     }
@@ -21,8 +19,8 @@
     gtag('config', 'G-G02Q6WTT9Q');
   </script>
 </head>
-
 <body>
+ <main id="main" class="opacityPopup">
   <header>
     <a class="my-logo" href="#">My logo</a>
     <nav>
@@ -31,7 +29,7 @@
         <li><a href="#About">About</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" id="mob-menu"></i>
     </nav>
   </header>
   <main>
@@ -233,7 +231,7 @@
           </li>
         </ul>
     </section>
-    <footer class="contact-section" id="contact">
+    <footer class="contact-section popupopacity" id="contact">
       <div class="contact">
         <h3>Contact me</h3>
         <p class="contact-section-text-content">
@@ -256,5 +254,4 @@
     </footer>
     <script src="./script.js"></script>
 </body>
-
 </html>
