@@ -5,32 +5,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Sheyla Pozo" />
-  <title>Portfolio Home Page</title>
+  <title>Sheyla's Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:regular,bold,500&display=swap" />
   <link rel="stylesheet" href="./assets/style.css" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G02Q6WTT9Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-G02Q6WTT9Q');
-</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-G02Q6WTT9Q');
+  </script>
 </head>
-<body>
+<body id="body-project">
   <header>
     <a class="my-logo" href="#">My logo</a>
     <nav>
-      <ul class="header-links">
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="header-links linksheader">
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
-      <i class="fas fa-bars"></i>
+      <i class="fas fa-bars" id="mob-menu"></i>
     </nav>
   </header>
-  <main>
-    <section class="section-top">
+  <main id="main">
+    <section class="section-top" id="Portfolio">
       <h1 class="section-title">
         I’m Sheyla <br />
         Glad to see you!
@@ -61,189 +63,197 @@
       </ul>
     </section>
   </main>
-  <div class="projects">
-    <div class="card">
-      <img class="card-image" src="img/desktop-img1.png" alt="Avocode" />
-      <div class="card-content">
-        <h2 class="card-title">TONIC</h2>
-        <div class="card-info">
-          <span>CANOPY</span>
-          <span>&#9679;</span>
-          <span>Back End Dev</span>
-          <span>&#9679;</span>
-          <span>2015</span>
+  <div class="cards-project" id="portfolio">
+    <div class="cards-project-list">
+      <div class="card">
+        <img class="card-image" src="img/desktop-img1.png" alt="Avocode" />
+        <div class="card-content">
+          <h2 class="card-title">TONIC</h2>
+          <div class="card-description card-info">
+            <span>CANOPY</span>
+            <span>&#9679;</span>
+            <span>Back End Dev</span>
+            <span>&#9679;</span>
+            <span>2015</span>
+          </div>
+          <p class="card-text-content">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="tags butonns-languages">
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">javaScript</li>
+          </ul>
+          <div>
+            <button type="button" class="btn-project">See Project</button>
+          </div>
         </div>
-        <p class="card-description">
-          A daily selection of privately personalized reads; no accounts or
-          sign-ups required.
-        </p>
-        <ul class="tags">
-          <li class="tag">html</li>
-          <li class="tag">css</li>
-          <li class="tag">javaScript</li>
-        </ul>
-        <div>
-          <button type="button" class="btn-project">See Project</button>
+      </div>
+      <div class="card">
+        <img class="card-image" src="img/desktop-img2.png" alt="Activity" />
+        <div class="card-content swap">
+          <h2 class="card-title">FACEBOOK</h2>
+          <div class="card-description card-info">
+            <span>CANOPY</span>
+            <span>&#9679;</span>
+            <span>Back End Dev</span>
+            <span>&#9679;</span>
+            <span>2015</span>
+          </div>
+          <p class="card-text-content">
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends..
+          </p>
+          <ul class="tags butonns-languages">
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">javaScript</li>
+          </ul>
+          <div>
+            <button type="button" class="btn-project">See Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="img/desktop-img3.png" alt="Yoga" />
+        <div class="card-content">
+          <h2 class="card-title">Facebook 360</h2>
+          <div class="card-info card-description">
+            <span>CANOPY</span>
+            <span>&#9679;</span>
+            <span>Back End Dev</span>
+            <span>&#9679;</span>
+            <span>2015</span>
+          </div>
+          <p class="card-text-content">
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear VR.
+          </p>
+          <ul class="tags butonns-languages">
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">javaScript</li>
+            <li class="tag">Ruby on rails</li>
+          </ul>
+          <div>
+            <button type="button" class="btn-project">See Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-image" src="img/desktop-img4.png" alt="Proffesional art printing" />
+        <div class="card-content swap">
+          <h2 class="card-title">Uber Navigation</h2>
+          <div class="card-description">
+            <span>CANOPY</span>
+            <span>&#9679;</span>
+            <span>Back End Dev</span>
+            <span>&#9679;</span>
+            <span>2015</span>
+          </div>
+          <p class="card-text-content">
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
+          </p>
+          <ul class="tags buttons-languages">
+            <li class="tag">html</li>
+            <li class="tag">css</li>
+            <li class="tag">javaScript</li>
+          </ul>
+          <div>
+            <button type="button" class="btn-project">See Project</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card">
-      <img class="card-image" src="img/desktop-img2.png" alt="Activity" />
-      <div class="card-content swap">
-        <h2 class="card-title">FACEBOOK</h2>
-        <div class="card-info">
-          <span>CANOPY</span>
-          <span>&#9679;</span>
-          <span>Back End Dev</span>
-          <span>&#9679;</span>
-          <span>2015</span>
-        </div>
-        <p class="card-description">
-          Experimental content creation feature that allows users to add to an
-          existing story over the course of a day without spamming their
-          friends..
-        </p>
-        <ul class="tags">
-          <li class="tag">html</li>
-          <li class="tag">css</li>
-          <li class="tag">javaScript</li>
-        </ul>
-        <div>
-          <button type="button" class="btn-project">See Project</button>
+    </div>
+    <div class="about-myself" id="About">
+      <div class="about-myself-container">
+        <div class="about-myself-container">
+          <div class="about-myself-content">
+            <h3 class="about-myself-title">About Myself</h3>
+            <p>
+              Hello I’m a software developer! I can help you build a product ,
+              feature or website Look through some of my work and experience! If you
+              like what you see and have a project you need coded, don’t hestiate to
+              contact me.
+            </p>
+            <p class="connect"><a href="#" class="main-text">LET’S CONNECT</a></p>
+            <ul class="social-media">
+              <li>
+                <a class="icon-links" href="https://twitter.com/sheyPozo"><img src="img/twitter.png" alt="Icon-Twitter" /></a>
+              </li>
+              <li>
+                <a class="icon-links" href="https://www.linkedin.com/in/sheypozo/"><img src="img/linkedin.png" alt="Icon-Linkedin" /></a>
+              </li>
+              <li>
+                <a class="icon-links" href="#"><img src="img/M.png" alt="Icon-Medium" /></a>
+              </li>
+              <li>
+                <a class="icon-links" href="https://github.com/sheylaPozo"><img src="img/github.png" alt="Icon-GitHub" /></a>
+              </li>
+              <li>
+                <a class="icon-links" href="#"><img src="img/fingers.png" alt="Icon-Angellist" /></a>
+              </li>
+            </ul>
+            <button type="button" class="btn-project">Get my resume</button>
+          </div>
+          <ul class="skills-container">
+            <li>
+              <div class="skills" id="skills-margin">
+                <p>Languages</p>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+              <ul class="languages">
+                <li class="lg-dropdown-description">
+                  <img src="img/javascript.png" alt="Javascript-icon" />
+                  <p>JavaSript</p>
+                </li>
+                <li class="lg-dropdown-description">
+                  <img src="img/html.png" alt="HTML-icon" />
+                  <p>HTML</p>
+                </li>
+                <li class="lg-dropdown-description">
+                  <img src="img/css.png" alt="CSS-icon" />
+                  <p>CSS</p>
+                </li>
+              </ul>
+            </li>
+            <li class="skills skills-border">
+              <p>Frameworks</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+            <li class="skills skills-border">
+              <p>Skills</p>
+              <i class="fas fa-chevron-right"></i>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="card">
-      <img class="card-image" src="img/desktop-img3.png" alt="Yoga" />
-      <div class="card-content">
-        <h2 class="card-title">Facebook 360</h2>
-        <div class="card-info">
-          <span>CANOPY</span>
-          <span>&#9679;</span>
-          <span>Back End Dev</span>
-          <span>&#9679;</span>
-          <span>2015</span>
-        </div>
-        <p class="card-description">
-          Exploring the future of media in Facebook's first Virtual Reality
-          app; a place to discover and enjoy 360 photos and videos on Gear VR.
+    <footer class="contact-section popupopacity" id="Contact">
+      <div class="contact">
+        <h3>Contact me</h3>
+        <p class="contact-section-text-content">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
         </p>
-        <ul class="tags">
-          <li class="tag">html</li>
-          <li class="tag">css</li>
-          <li class="tag">javaScript</li>
-          <li class="tag">Ruby on rails</li>
-        </ul>
-        <div>
-          <button type="button" class="btn-project">See Project</button>
-        </div>
+        <form action="https://formspree.io/f/meqvkzyo" method="POST">
+          <input type="text" name="user-name" id="user-name" required placeholder="Name" maxlength="30" />
+          <input type="email" name="user-email" id="user-email" required placeholder="Email" />
+          <textarea name="message" id="message" rows="8" required placeholder="write your message here"
+            maxlength="500"></textarea>
+          <div>
+            <button class="btn-project btn-contact" type="submit">
+              Get in Touch
+            </button>
+          </div>
+        </form>
       </div>
-    </div>
-    <div class="card">
-      <img class="card-image" src="img/desktop-img4.png" alt="Proffesional art printing" />
-      <div class="card-content swap">
-        <h2 class="card-title">Uber Navigation</h2>
-        <div class="card-info">
-          <span>CANOPY</span>
-          <span>&#9679;</span>
-          <span>Back End Dev</span>
-          <span>&#9679;</span>
-          <span>2015</span>
-        </div>
-        <p class="card-description">
-          A smart assistant to make driving more safe, efficient, and fun by
-          unlocking your most expensive computer: your car.
-        </p>
-        <ul class="tags">
-          <li class="tag">html</li>
-          <li class="tag">css</li>
-          <li class="tag">javaScript</li>
-        </ul>
-        <div>
-          <button type="button" class="btn-project">See Project</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <section class="about-myself">
-    <div class="about-myself-content">
-      <h3 class="about-myself-title">About Myself</h3>
-      <p>
-        Hello I’m a software developer! I can help you build a product ,
-        feature or website Look through some of my work and experience! If you
-        like what you see and have a project you need coded, don’t hestiate to
-        contact me.
-      </p>
-      <p><a href="#" class="main-text">LET’S CONNECT</a></p>
-      <ul class="social-media">
-        <li>
-          <a href="https://twitter.com/sheyPozo"><img src="img/twitter.png" alt="Icon-Twitter" /></a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/sheypozo/"><img src="img/linkedin.png" alt="Icon-Linkedin" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/M.png" alt="Icon-Medium" /></a>
-        </li>
-        <li>
-          <a href="https://github.com/sheylaPozo"><img src="img/github.png" alt="Icon-GitHub" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="img/fingers.png" alt="Icon-Angellist" /></a>
-        </li>
-      </ul>
-      <button type="button" class="btn-project">Get my resume</button>
-    </div>
-    <ul class="skills-container">
-      <li>
-        <div class="skills" id="skills-margin">
-          <p>Languages</p>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <ul class="languages">
-          <li class="lg-dropdown-description">
-            <img src="img/javascript.png" alt="Javascript-icon" />
-            <p>JavaSript</p>
-          </li>
-          <li class="lg-dropdown-description">
-            <img src="img/html.png" alt="HTML-icon" />
-            <p>HTML</p>
-          </li>
-          <li class="lg-dropdown-description">
-            <img src="img/css.png" alt="CSS-icon" />
-            <p>CSS</p>
-          </li>
-        </ul>
-      </li>
-      <li class="skills skills-border">
-        <p>Frameworks</p>
-        <i class="fas fa-chevron-right"></i>
-      </li>
-      <li class="skills skills-border">
-        <p>Skills</p>
-        <i class="fas fa-chevron-right"></i>
-      </li>
-    </ul>
-  </section>
-  <footer class="contact-section">
-    <div class="contact">
-      <h3>Contact me</h3>
-      <p class="contact-section-text-content">
-        If you have an application you are interested in developing, a feature
-        that you need built or a project that needs coding. I’d love to help
-        with it
-      </p>
-      <form action="https://formspree.io/f/meqvkzyo" method="POST">
-        <input type="text" name="user-name" id="user-name" required placeholder="Name" maxlength="30" />
-        <input type="email" name="user-email" id="user-email" required placeholder="Email" />
-        <textarea name="message" id="message" rows="8" required placeholder="write your message here" maxlength="500"></textarea>
-        <div>
-          <button class="btn-project btn-contact" type="submit">
-            Get in Touch
-          </button>
-        </div>
-      </form>
-    </div>
-  </footer>
+    </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

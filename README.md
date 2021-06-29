@@ -40,7 +40,7 @@ To get a local copy up and running follow these simple sample steps.
 
 ## 💖 Getting Started
 
-To get the content of this project locally you need to run this command on your terminal:
+To get the content of this project locally you need to run this command on your terminal :
 
  - ` cd <folder> `
 
