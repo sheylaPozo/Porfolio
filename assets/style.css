@@ -17,7 +17,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.icon-links {
+  padding: 10px;
+}
+
 .menu-style {
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
@@ -144,6 +149,12 @@ section .main-text {
   border-radius: 16px;
   padding: 16px;
   margin: 1px 24px;
+  margin-bottom: 1rem;
+}
+
+.connect {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .card-image {
