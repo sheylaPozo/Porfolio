@@ -51,6 +51,7 @@ body {
 }
 
 main {
+  height: 100vh;
   background-image: url("../img/shapes-desktop.png");
   background-size: cover;
   background-repeat: no-repeat;
