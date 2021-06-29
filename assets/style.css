@@ -407,6 +407,14 @@ textarea {
     line-height: 20px;
   }
 
+  .linksheader {
+    text-decoration: none;
+  }
+  
+  .linksheader:hover {
+    text-decoration: underline;
+  }
+  
   .cards-project {
     padding-top: 114px;
   }
