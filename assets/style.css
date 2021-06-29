@@ -411,7 +411,7 @@ textarea {
     text-decoration: none;
   }
 
-  .linksheader:hover {
+  .linksheader a:hover {
     text-decoration: underline;
   }
 
