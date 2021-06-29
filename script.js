@@ -70,3 +70,4 @@ document
     menu.style.display = "none";
     document.getElementById("main").style.filter = "none";
   });
+  
