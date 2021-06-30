@@ -149,12 +149,6 @@ section .main-text {
   padding: 16px;
 }
 
-.card img {
-  border-radius: 8px;
-  width: 100%;
-  transition: transform 1s;
-}
-
 .card img:not(:last-child) {
   width: 100%;
   margin-top: 12px;
