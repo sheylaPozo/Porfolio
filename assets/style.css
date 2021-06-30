@@ -59,8 +59,8 @@ main {
 }
 
 header {
-  position: absolute;
-  background-color: #fff;
+  position: fixed;
+  background-color: transparent;
   top: 0;
   width: 100%;
   padding: 1rem 0;
