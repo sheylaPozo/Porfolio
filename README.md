@@ -84,6 +84,12 @@ For tracking linter errors locally you need to follow these steps:
 
 ---
 
+👤 **Isaac Lumato**
+
+- GitHub: [Isaac Lumato](https://github.com/isaka-lumato)
+- Twitter: [Isaac Lumato](https://twitter.com/lm10skilly)
+- LinkedIn: [Isaac Lumato](https://www.linkedin.com/in/isaka-william-90773020b/)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
