@@ -306,15 +306,3 @@ for (let i = 0; i < myProjects.length; i += 1) {
     seeProjectButton(e.target.id);
   });
 }
-
-const form = document.getElementById("form-contact1");
-const emailInput = document.getElementById("user-email");
-const errorMessage = document.getElementById("error-message");
-
-form.addEventListener("submit", (e) => {
-  if (emailInput.value.toLowerCase() !== emailInput.value) {
-    e.preventDefault();
-    errorMessage.textContent =
-      "Please, use only lowercase letter for your email!";
-  }
-});
