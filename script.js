@@ -97,7 +97,7 @@ const myProjects = [];
 
 myProjects.push(
   new ProjectCard(
-    './img/tonic.svg',
+    './img/img1.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -207,7 +207,7 @@ function seeProjectButton(i) {
   popupMobileCard.appendChild(popupCardContent);
 
   const popupCardDescriptionContent = document.createElement('p');
-  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it but also the leap into electronic typesetting, remaining essent.";
+  popupCardDescriptionContent.textContent = "A daily selection of privately personalized reads; no accounts or sign-ups required";
   popupCardDescriptionContent.className = 'card-text-content';
   popupCardContent.appendChild(popupCardDescriptionContent);
 
@@ -306,3 +306,42 @@ for (let i = 0; i < myProjects.length; i += 1) {
     seeProjectButton(e.target.id);
   });
 }
+
+function seeProjectButton(i) {
+    const popupMobileCard = document.createElement("div");
+    popupMobileCard.className = "card popup-mobile-card cards-project-list";
+    popupMobileCard.style.display = "block";
+    body.appendChild(popupMobileCard);
+  
+    const popupCardTop = document.createElement("div");
+    popupCardTop.className = "popup-card-top";
+    popupMobileCard.appendChild(popupCardTop);
+  
+    const popupCardClose = document.createElement("i");
+    popupCardClose.className = "fas fa-times";
+    popupCardTop.appendChild(popupCardClose);
+  
+    let popupCardTitle = document.createElement("h2");
+    popupCardTitle.className = "card-title";
+    popupCardTitle.textContent = `${myProjects[i].title}`;
+    popupCardTop.appendChild(popupCardTitle);
+  
+    let popupCardDescription = document.createElement("p");
+    popupCardDescription.className = "card-description";
+    popupCardDescription.textContent = `${myProjects[i].descriptionName}`;
+    popupMobileCard.appendChild(popupCardDescription);
+  
+    let popupCardSpan = document.createElement("span");
+  }
+
+const form = document.getElementById("form-contact");
+const emailInput = document.getElementById("user-email");
+const errorMessage = document.getElementById("error-message");
+
+form.addEventListener("submit", (e) => {
+  if (emailInput.value.toLowerCase() !== emailInput.value) {
+    e.preventDefault();
+    errorMessage.textContent =
+      "Please, use only lowercase letter for your email!";
+  }
+});
