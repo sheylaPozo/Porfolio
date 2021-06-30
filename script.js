@@ -307,7 +307,7 @@ for (let i = 0; i < myProjects.length; i += 1) {
   });
 }
 
-const form = document.getElementById("form-contact");
+const form = document.getElementById("form-contact1");
 const emailInput = document.getElementById("user-email");
 const errorMessage = document.getElementById("error-message");
 
