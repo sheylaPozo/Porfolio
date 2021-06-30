@@ -71,6 +71,12 @@ document
     document.getElementById('main').style.filter = 'none';
   });
 
+// =======================================================================
+// --------------------- Details popup window MOBILE----------------------
+// =======================================================================
+
+// ************Create HTML- project section************
+
 function ProjectCard(
   imageLink,
   imageAltText,
@@ -81,7 +87,7 @@ function ProjectCard(
   descriptionContetnt,
   technologies,
 ) {
-  this.imgage = {
+  this.image = {
     link: imageLink,
     altText: imageAltText,
   };
@@ -97,7 +103,7 @@ const myProjects = [];
 
 myProjects.push(
   new ProjectCard(
-    './img/img1.png',
+    'images/image1.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -110,7 +116,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
-    './img/img2.png',
+    'images/image2.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -123,7 +129,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
-    './img/img3.png',
+    'images/image3.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -136,7 +142,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
-    './img/img4.png',
+    'images/image4.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -243,7 +249,7 @@ function seeProjectButton(i) {
   popupButtonGithubLink.className = 'btn-project';
   popupButtonDIV.appendChild(popupButtonGithubLink);
   const popupButtonGithubIcon = document.createElement('img');
-  popupButtonGithubIcon.src = './img/icon-github.png';
+  popupButtonGithubIcon.src = 'images/icon-github-purple.png';
   popupButtonGithubLink.appendChild(popupButtonGithubIcon);
 }
 
