@@ -112,7 +112,7 @@ myProjects.push(
   new ProjectCard(
     'img/img2.png',
     'Name of Project',
-    'Tonic',
+    'Facebook 360',
     'CANOPY',
     'Back End Dev',
     '2015',
@@ -125,7 +125,7 @@ myProjects.push(
   new ProjectCard(
     'img/img3.png',
     'Name of Project',
-    'Tonic',
+    'Uber Company',
     'CANOPY',
     'Back End Dev',
     '2015',
@@ -137,7 +137,7 @@ myProjects.push(
 myProjects.push(
   new ProjectCard(
     'img/img4.png',
-    'Name of Project',
+    'Google',
     'Tonic',
     'CANOPY',
     'Back End Dev',
