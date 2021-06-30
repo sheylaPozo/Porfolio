@@ -97,7 +97,11 @@ const myProjects = [];
 
 myProjects.push(
   new ProjectCard(
+<<<<<<< HEAD
     './img/img1.png',
+=======
+    'img/img1.png',
+>>>>>>> f69eacf89ac65d382729aa20b2fbd3694dbe0859
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -110,6 +114,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
+<<<<<<< HEAD
     './img/img4.png',
     'Name of Project',
     'Multi-Post Stories',
@@ -117,6 +122,15 @@ myProjects.push(
     'Full Stack Dev',
     '2015',
     'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+=======
+    'img/img2.png',
+    'Name of Project',
+    'Tonic',
+    'CANOPY',
+    'Back End Dev',
+    '2015',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+>>>>>>> f69eacf89ac65d382729aa20b2fbd3694dbe0859
     ['html', 'css', 'javaScript'],
   ),
 );
@@ -136,6 +150,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
+<<<<<<< HEAD
     'img/img2.png',
     'Name of Project',
     'Uber Navigation',
@@ -143,6 +158,15 @@ myProjects.push(
     'Back End Dev',
     '2015',
     'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+=======
+    'img/img4.png',
+    'Name of Project',
+    'Tonic',
+    'CANOPY',
+    'Back End Dev',
+    '2015',
+    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+>>>>>>> f69eacf89ac65d382729aa20b2fbd3694dbe0859
     ['html', 'css', 'javaScript'],
   ),
 );
@@ -207,7 +231,11 @@ function seeProjectButton(i) {
   popupMobileCard.appendChild(popupCardContent);
 
   const popupCardDescriptionContent = document.createElement('p');
+<<<<<<< HEAD
   popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
+=======
+  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it but also the leap into electronic typesetting, remaining essent.";
+>>>>>>> f69eacf89ac65d382729aa20b2fbd3694dbe0859
   popupCardDescriptionContent.className = 'card-text-content';
   popupCardContent.appendChild(popupCardDescriptionContent);
 
@@ -232,6 +260,7 @@ function seeProjectButton(i) {
   const popupButtonLiveLink = document.createElement('a');
   popupButtonLiveLink.className = 'btn-project';
   popupButtonLiveLink.textContent = 'See Live';
+<<<<<<< HEAD
   popupButtonLiveLink.href = 'https://sheylapozo.github.io/Porfolio/';
   popupButtonDIV.appendChild(popupButtonLiveLink);
   const popupButtonLiveIcon = document.createElement('img');
@@ -244,6 +273,20 @@ function seeProjectButton(i) {
   popupButtonDIV.appendChild(popupButtonGithubLink);
   const popupButtonGithubIcon = document.createElement('img');
   popupButtonGithubIcon.src = './img/icon-github.png';
+=======
+  popupButtonLiveLink.href = '#';
+  popupButtonDIV.appendChild(popupButtonLiveLink);
+  const popupButtonLiveIcon = document.createElement('img');
+  popupButtonLiveIcon.src = 'img/icon-live.png';
+  popupButtonLiveLink.appendChild(popupButtonLiveIcon);
+  const popupButtonGithubLink = document.createElement('a');
+  popupButtonGithubLink.textContent = 'See Source';
+  popupButtonGithubLink.href = '#';
+  popupButtonGithubLink.className = 'btn-project';
+  popupButtonDIV.appendChild(popupButtonGithubLink);
+  const popupButtonGithubIcon = document.createElement('img');
+  popupButtonGithubIcon.src = 'img/icon-github.png';
+>>>>>>> f69eacf89ac65d382729aa20b2fbd3694dbe0859
   popupButtonGithubLink.appendChild(popupButtonGithubIcon);
 }
 
@@ -306,4 +349,7 @@ for (let i = 0; i < myProjects.length; i += 1) {
     seeProjectButton(e.target.id);
   });
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> f69eacf89ac65d382729aa20b2fbd3694dbe0859
