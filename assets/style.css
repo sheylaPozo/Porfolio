@@ -93,7 +93,7 @@ header nav ul {
 }
 
 .linksheader a:hover {
-   text-decoration: underline;
+  text-decoration: underline;
 }
 
 .fa-bars {
@@ -687,34 +687,64 @@ textarea {
     width: 15%;
   }
 }
-  .my-logo:hover {
-    animation-duration: 3s;
-    animation-name: rotate;
-    animation-iteration-count: 2;
+
+.my-logo:hover {
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: 2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    25% {
-      transform: rotate(45deg);
-      color: rgb(158, 77, 77);
-    }
-
-    50% {
-      transform: rotate(90deg);
-      color: green;
-    }
-
-    75% {
-      transform: rotate(135deg);
-      color: yellow;
-    }
-
-    100% {
-      transform: rotate(180deg);
-      color: magenta;
-    }
+  25% {
+    transform: rotate(45deg);
+    color: rgb(158, 77, 77);
   }
+
+  50% {
+    transform: rotate(90deg);
+    color: green;
+  }
+
+  75% {
+    transform: rotate(135deg);
+    color: yellow;
+  }
+
+  100% {
+    transform: rotate(180deg);
+    color: magenta;
+  }
+
+  75% {
+    transform: rotate(210deg);
+    color: yellow;
+  }
+
+  50% {
+    transform: rotate(330deg);
+    color: green;
+  }
+
+  25% {
+    transform: rotate(45deg);
+    color: rgb(158, 77, 77);
+  }
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(360deg);
+    color: rgb(158, 77, 77);
+  }
+
+  50% {
+    transform: rotate(220deg);
+    color: green;
+  }
+}
