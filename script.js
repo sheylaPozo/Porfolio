@@ -110,7 +110,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
-    'images/image2.png',
+    'img/img2.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -123,7 +123,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
-    'images/image3.png',
+    'img/img3.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -136,7 +136,7 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
-    'images/image4.png',
+    'img/img4.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
@@ -235,7 +235,7 @@ function seeProjectButton(i) {
   popupButtonLiveLink.href = '#';
   popupButtonDIV.appendChild(popupButtonLiveLink);
   const popupButtonLiveIcon = document.createElement('img');
-  popupButtonLiveIcon.src = 'images/icon-live.png';
+  popupButtonLiveIcon.src = 'img/icon-live.png';
   popupButtonLiveLink.appendChild(popupButtonLiveIcon);
   const popupButtonGithubLink = document.createElement('a');
   popupButtonGithubLink.textContent = 'See Source';
@@ -243,7 +243,7 @@ function seeProjectButton(i) {
   popupButtonGithubLink.className = 'btn-project';
   popupButtonDIV.appendChild(popupButtonGithubLink);
   const popupButtonGithubIcon = document.createElement('img');
-  popupButtonGithubIcon.src = 'images/icon-github-purple.png';
+  popupButtonGithubIcon.src = 'img/icon-github.png';
   popupButtonGithubLink.appendChild(popupButtonGithubIcon);
 }
 
