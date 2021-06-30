@@ -307,33 +307,6 @@ for (let i = 0; i < myProjects.length; i += 1) {
   });
 }
 
-function seeProjectButton(i) {
-    const popupMobileCard = document.createElement("div");
-    popupMobileCard.className = "card popup-mobile-card cards-project-list";
-    popupMobileCard.style.display = "block";
-    body.appendChild(popupMobileCard);
-  
-    const popupCardTop = document.createElement("div");
-    popupCardTop.className = "popup-card-top";
-    popupMobileCard.appendChild(popupCardTop);
-  
-    const popupCardClose = document.createElement("i");
-    popupCardClose.className = "fas fa-times";
-    popupCardTop.appendChild(popupCardClose);
-  
-    let popupCardTitle = document.createElement("h2");
-    popupCardTitle.className = "card-title";
-    popupCardTitle.textContent = `${myProjects[i].title}`;
-    popupCardTop.appendChild(popupCardTitle);
-  
-    let popupCardDescription = document.createElement("p");
-    popupCardDescription.className = "card-description";
-    popupCardDescription.textContent = `${myProjects[i].descriptionName}`;
-    popupMobileCard.appendChild(popupCardDescription);
-  
-    let popupCardSpan = document.createElement("span");
-  }
-
 const form = document.getElementById("form-contact");
 const emailInput = document.getElementById("user-email");
 const errorMessage = document.getElementById("error-message");
