@@ -71,12 +71,6 @@ document
     document.getElementById('main').style.filter = 'none';
   });
 
-// =======================================================================
-// --------------------- Details popup window MOBILE----------------------
-// =======================================================================
-
-// ************Create HTML- project section************
-
 function ProjectCard(
   imageLink,
   imageAltText,
@@ -103,7 +97,7 @@ const myProjects = [];
 
 myProjects.push(
   new ProjectCard(
-    'images/image1.png',
+    'img/img1.png',
     'Name of Project',
     'Tonic',
     'CANOPY',
