@@ -112,11 +112,11 @@ myProjects.push(
   new ProjectCard(
     './img/img4.png',
     'Name of Project',
-    'Tonic',
+    'Multi-Post Stories',
     'FACEBOOK',
     'Full Stack Dev',
     '2015',
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     ['html', 'css', 'javaScript'],
   ),
 );
@@ -138,11 +138,11 @@ myProjects.push(
   new ProjectCard(
     'img/img2.png',
     'Name of Project',
-    'Tonic',
-    'CANOPY',
+    'Uber Navigation',
+    'Uber',
     'Back End Dev',
     '2015',
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     ['html', 'css', 'javaScript'],
   ),
 );
@@ -207,7 +207,7 @@ function seeProjectButton(i) {
   popupMobileCard.appendChild(popupCardContent);
 
   const popupCardDescriptionContent = document.createElement('p');
-  popupCardDescriptionContent.textContent = "A daily selection of privately personalized reads; no accounts or sign-ups required";
+  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
   popupCardDescriptionContent.className = 'card-text-content';
   popupCardContent.appendChild(popupCardDescriptionContent);
 
