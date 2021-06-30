@@ -14,11 +14,7 @@ a {
 
 body {
   background-color: #f7f7f9;
-  font-family: 'Poppins', sans-serif;
-}
-
-.icon-links {
-  padding: 10px;
+  position: relative;
 }
 
 .menu-style {
@@ -48,7 +44,7 @@ body {
 
 .menu-style a {
   color: #fff;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 64px;
@@ -56,15 +52,17 @@ body {
 
 main {
   height: 100vh;
-  background-image: url('../img/shapes-desktop.png');
-  background-size: cover;
+  background-image: url("../img/shapes\ mobile.png");
   background-repeat: no-repeat;
   background-color: #fff;
   border-bottom-left-radius: 80px;
 }
 
 header {
+  position: absolute;
   background-color: #fff;
+  top: 0;
+  width: 100%;
   padding: 1rem 0;
   display: flex;
   align-items: center;
@@ -72,16 +70,12 @@ header {
 }
 
 header .my-logo {
-  padding-left: 24px;
-  color: #4255ff;
+  margin-left: 24px;
+  color: #6070ff;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
-}
-
-.social-media {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 section ul {
@@ -94,6 +88,14 @@ header nav ul {
   display: none;
 }
 
+.linksheader {
+  text-decoration: none;
+}
+
+.linksheader a:hover {
+  text-decoration: underline;
+}
+
 .fa-bars {
   margin-right: 24px;
   color: #6070ff;
@@ -102,19 +104,11 @@ header nav ul {
 .section-top {
   margin: 0 24px 136px 24px;
   padding-top: 128px;
-  padding-bottom: 138px;
 }
 
 .section-title {
   color: #172b4d;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 52px;
-  word-wrap: break-word;
-}
-
-.about-myself-title {
-  color: #172b4d;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
@@ -124,84 +118,84 @@ header nav ul {
 section p {
   margin-top: 12px;
   color: #344563;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
 
 section .main-text {
-  color: #293eff;
+  color: #7f8cff;
   margin-top: 12px;
 }
 
-.projects {
-  justify-content: center;
-  margin: 114px 0;
+.cards-project {
+  padding-top: 114px;
+}
+
+.cards-project-list {
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 114px;
   display: grid;
   gap: 88px;
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
   border: 1px solid #dfe1e6;
   box-sizing: border-box;
   border-radius: 16px;
   padding: 16px;
-  margin: 1px 24px;
-  margin-bottom: 1rem;
 }
 
-.connect {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.card-image {
+.card img:not(:last-child) {
   width: 100%;
+  margin-top: 12px;
+  height: auto;
 }
 
-.card-title {
+.card .card-title {
   color: #172b4d;
+  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 32px;
   line-height: 44px;
   margin-top: 12px;
 }
 
-.card-info {
-  margin: 8px 0;
-  display: flex;
-  gap: 20px;
-}
-
-.card-info span {
-  font-size: 12px;
-  line-height: 24px;
-  color: #6b778c;
-  font-weight: normal;
-}
-
-.card-info span:first-child {
+.card .card-description {
   color: #344563;
-  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  margin-top: 20px;
 }
 
-.tags {
+.card span {
+  color: #7a869a;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.card .card-text-content {
+  color: #344563;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.card .butonns-languages {
   display: flex;
-  flex-wrap: wrap;
-  margin: 12px 0;
   gap: 8px;
 }
 
-.tag {
-  padding: 4px 12px;
-  border-radius: 8px;
-  background-color: #ebebff;
-  color: #1f35ff;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.03em;
+.ruby-on-rails {
+  display: none;
 }
 
 .btn-lg {
@@ -211,6 +205,7 @@ section .main-text {
   line-height: 16px;
   letter-spacing: 0.03em;
   background-color: #ebebff;
+  font-family: "Poppins", sans-serif;
   border-radius: 8px;
   padding: 4px 12px;
 }
@@ -218,14 +213,19 @@ section .main-text {
 .btn-project {
   color: #396df2;
   background-color: #fff;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
+  white-space: nowrap;
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
   border: 1px solid #7f8cff;
+  display: flex;
+  align-items: center;
   border-radius: 8px;
   padding: 12px;
   margin-top: 14px;
+  outline: none;
 }
 
 .btn-project:hover {
@@ -239,14 +239,88 @@ section .main-text {
   background-color: #2230d2;
 }
 
+.popup-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(116, 114, 114, 0.425);
+}
+
+.popup-mobile-card {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  left: 0;
+  right: 0;
+  top: 20px;
+  bottom: 20px;
+  height: 680px;
+  display: none;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 114px;
+}
+
+.popup-mobile-card .card-text-content {
+  margin-top: 12px;
+}
+
+.popup-mobile-card .card-title {
+  margin-top: 0;
+}
+
+.popup-mobile-card .popupCLose {
+  color: #67798e;
+}
+
+.popup-mobile-card .card-content {
+  padding-bottom: 20px;
+}
+
+.popup-mobile-card .butonns-languages {
+  padding-top: 12px;
+}
+
+.popup-mobile-card .popupimage {
+  margin-top: 20px;
+}
+
+.popup-mobile-card .popup-button-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-mobile-card .popup-button-div .btn-project {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.popup-mobile-card .popup-button-div .btn-project a {
+  color: #396df2;
+  font-weight: 500;
+}
+
+.popup-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-card-top i {
+  color: #67798e;
+}
+
 .about-myself {
   background-color: #fff;
-  padding-top: 114px;
   border-top-right-radius: 80px;
 }
 
 .about-myself-content {
-  margin: 0 24px 48px 24px;
+  margin: 0 24px 0 24px;
 }
 
 .about-myself-content .section-title {
@@ -264,21 +338,8 @@ section .main-text {
   margin-right: 12px;
 }
 
-.languages {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
 .lg-dropdown p {
   padding-left: 16px;
-}
-
-.skills p {
-  color: #000;
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 500;
 }
 
 .about-myself .skills p {
@@ -291,6 +352,12 @@ section .main-text {
   align-items: baseline;
   font-size: 20px;
   line-height: 24px;
+}
+
+.about-myself-content .skills p {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-weight: 500;
 }
 
 .lg-dropdown-description {
@@ -323,11 +390,11 @@ section .main-text {
 }
 
 .contact {
-  background-image: url('../img/contact-form-mobile.png');
+  background-image: url("../img/contact-form-mobile.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 147px 21px;
-  background-color: #4255ff;
+  background-color: #6070ff;
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 45px;
@@ -335,26 +402,17 @@ section .main-text {
 }
 
 .contact h2 {
+  font-family: "Poppins", sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   text-align: center;
   padding-top: 103px;
-  padding-bottom: 25px;
-}
-
-.contact h3 {
-  color: #fff;
-  font-weight: bold;
-  font-size: 33px;
-  line-height: 52px;
-  text-align: center;
-  padding-top: 103px;
-  padding-bottom: 25px;
 }
 
 .contact-section-text-content {
+  font-family: "Poppins", sans-serif;
   color: #ebebff;
   font-size: 20px;
   line-height: 28px;
@@ -368,20 +426,58 @@ section .main-text {
   margin-top: 58px;
 }
 
-input,
+.contact input,
 textarea {
   padding: 15px 38px 15px 16px;
   border: 1px solid #cfd8dc;
-  border-radius: 8px;
   font-size: 17px;
-  line-height: 20px;
+  border-radius: 8px;
   font-weight: normal;
   color: #172b4d;
   resize: none;
   font-family: sans-serif;
 }
 
-@media screen and (min-width: 992px) {
+#message {
+  height: 170px;
+}
+
+.btn-contact {
+  width: 48%;
+}
+
+.dot::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #c1c7d0;
+  background-color: #898a8d;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: 0 7px;
+}
+
+.dot::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border: 1px solid #c1c7d0;
+  background-color: #898a8d;
+  border-radius: 50%;
+  font-weight: bold;
+  margin: 0 7px;
+}
+
+@media only screen and (min-width: 1024px) {
+  main {
+    height: 90vh;
+    background-image: none;
+    border-bottom-left-radius: 150px;
+    padding: 100px 24px 0 0;
+  }
+
   header nav {
     display: flex;
   }
@@ -402,99 +498,19 @@ textarea {
 
   header nav ul li a {
     color: #344563;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
   }
 
-  .linksheader {
-    text-decoration: none;
-  }
-
-  .linksheader a:hover {
-    text-decoration: underline;
-  }
-
-  .cards-project {
-    padding-top: 114px;
-  }
-
-  .cards-project-list {
-    width: 88%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 114px;
-    display: grid;
-    gap: 88px;
-  }
-
-  .card {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 24px;
-    justify-content: center;
-  }
-
-  .card-content {
-    padding: 0 24px 0 24px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .card .card-title {
-    color: #172b4d;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    margin-top: 12px;
-  }
-
-  .card .card-description {
-    color: #344563;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    margin-top: 20px;
-  }
-
-  .card span {
-    color: #7a869a;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-  }
-
-  .card .card-text-content {
-    color: #344563;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    line-height: 24px;
-    margin-top: 20px;
-  }
-
-  .card .butonns-languages {
-    display: flex;
-    gap: 8px;
-  }
-
-  .ruby-on-rails {
-    display: none;
-  }
-
   .section-top {
     margin: 0;
+    background-image: url("../img/shapes-desktop.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-size: 90vw 74vh;
-    padding: 70px 200px 207px 200px;
+    padding: 0 260px 257px 260px;
   }
 
   .section-top h1 {
@@ -507,19 +523,106 @@ textarea {
     line-height: 28px;
   }
 
-  .projects {
+  .card {
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  .cards-project-list {
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
   }
 
-  .about-myself {
+  .card img:not(:last-child) {
+    width: 50%;
+    height: 60%;
+  }
+
+  .card:nth-child(even) {
     display: flex;
-    padding: 10rem;
-    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 16px;
+  }
+
+  .card:nth-child(even) img {
+    padding: 24px 22px 24px 0;
+  }
+
+  .card:nth-child(even) .card-content {
+    padding: 48px 0 0 48px;
+  }
+
+  #popup-content {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .card:nth-child(odd) {
+    display: flex;
     flex-direction: row;
+    gap: 16px;
+  }
+
+  .card:nth-child(odd) .card-content {
+    padding: 48px 46px 0 0;
+  }
+
+  .card .card-image0 {
+    content: url("../img/desktop-img1.png");
+  }
+
+  .card .card-image1 {
+    content: url("../img/desktop-img2.png");
+  }
+
+  .card .card-image2 {
+    content: url("../img/desktop-img3.png");
+  }
+
+  .card .card-image3 {
+    content: url("../img/desktop-img4.png");
+  }
+
+  .card .card-content .card-description,
+  .card .card-content .card-description span {
+    font-weight: 400;
+  }
+
+  .card .butonns-languages {
+    margin-top: 24px;
+  }
+
+  .card .ruby-on-rails {
+    display: block;
+  }
+
+  .card .btn-project {
+    cursor: url("../img/handcursor.png"), auto;
+    margin-top: 50px;
+  }
+
+  .card .btn-project-pressed {
+    color: #fff;
+    background-color: #2230d2;
+  }
+
+  .popup-mobile-card {
+    margin: 0 auto;
+    padding: 3rem;
+    height: 100%;
+  }
+
+  #popupimage {
+    width: 100% !important;
+  }
+
+  .about-myself-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 114px 182px 0 142px;
   }
 
   .about-myself .section-title {
@@ -531,25 +634,18 @@ textarea {
     padding-right: 0;
   }
 
-  .languages {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .lg-dropdown {
     flex-direction: row;
   }
 
-  .skills-container {
-    width: 100%;
-  }
-
   .lg-dropdown-description {
     flex-direction: column;
+    width: 122px;
+    height: 120px;
     border-radius: 2px;
   }
 
-  .lg-dropdown-description img {
+  .about-myself .lg-dropdown-description img {
     width: 48px;
     height: 48px;
   }
@@ -562,87 +658,93 @@ textarea {
     padding-top: 0;
   }
 
+  footer .contact form {
+    align-items: center;
+  }
+
   .contact {
-    background-image: url('../img/footer-desktop.png');
+    background-image: url("../img/footer-desktop.png");
     background-position: center;
     border-top-left-radius: 150px;
     padding: 142px 24px 127px 24px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
-  .contact h3 {
-    color: #fff;
-    font-weight: bold;
-    font-size: 55px;
-    line-height: 52px;
-    text-align: center;
-    padding-top: 103px;
-    padding-bottom: 25px;
-  }
-
-  .swap {
-    order: -1;
-  }
-
-  form {
-    align-items: center;
+  footer .contact-section-text-content {
     width: 40%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .card-image {
-    width: 544px;
-    height: 448px;
-  }
-
-  input,
+  .contact input,
   textarea {
-    padding: 15px 38px 15px 16px;
-    border: 1px solid #cfd8dc;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 2px;
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: normal;
-    color: #172b4d;
-    resize: none;
-    font-family: sans-serif;
-    width: 100%;
   }
 
-  .contact-section-text-content {
-    width: 43%;
+  footer form .btn-contact {
+    width: 15%;
+  }
+}
+
+.my-logo:hover {
+  animation-duration: 3s;
+  animation-name: rotate;
+  animation-iteration-count: 2;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
   }
 
-  .my-logo:hover {
-    animation-duration: 3s;
-    animation-name: rotate;
-    animation-iteration-count: 2;
+  25% {
+    transform: rotate(45deg);
+    color: rgb(158, 77, 77);
   }
 
-  @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
+  50% {
+    transform: rotate(90deg);
+    color: green;
+  }
 
-    25% {
-      transform: rotate(45deg);
-      color: rgb(158, 77, 77);
-    }
+  75% {
+    transform: rotate(135deg);
+    color: yellow;
+  }
 
-    50% {
-      transform: rotate(90deg);
-      color: green;
-    }
+  100% {
+    transform: rotate(180deg);
+    color: magenta;
+  }
 
-    75% {
-      transform: rotate(135deg);
-      color: yellow;
-    }
+  75% {
+    transform: rotate(210deg);
+    color: yellow;
+  }
 
-    100% {
-      transform: rotate(180deg);
-      color: magenta;
-    }
+  50% {
+    transform: rotate(330deg);
+    color: green;
+  }
+
+  25% {
+    transform: rotate(45deg);
+    color: rgb(158, 77, 77);
+  }
+
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(360deg);
+    color: rgb(158, 77, 77);
+  }
+
+  50% {
+    transform: rotate(220deg);
+    color: green;
   }
 }
