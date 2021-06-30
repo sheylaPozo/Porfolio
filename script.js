@@ -81,7 +81,7 @@ function ProjectCard(
   descriptionContetnt,
   technologies,
 ) {
-  this.img = {
+  this.imgage = {
     link: imageLink,
     altText: imageAltText,
   };
