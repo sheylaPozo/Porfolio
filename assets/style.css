@@ -94,6 +94,7 @@ header nav ul {
 
 .linksheader a:hover {
   text-decoration: underline;
+  color: #7f8cff;
 }
 
 .fa-bars {
@@ -443,7 +444,7 @@ textarea {
 }
 
 .btn-contact {
-  width: 48%;
+   width: 100%;
 }
 
 .dot::before {
@@ -684,7 +685,7 @@ textarea {
   }
 
   footer form .btn-contact {
-    width: 15%;
+    width: 100%;
   }
 }
 
@@ -747,4 +748,41 @@ textarea {
     transform: rotate(220deg);
     color: green;
   }
+}
+
+.button:hover {
+  background-color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #2230d2;
+  color: #fff;
+}
+
+.button:disabled {
+  border: 1px solid #c1c7d0;
+  box-sizing: border-box;
+}
+
+.button:enabled {
+  border: 1px solid #7f8cff;
+  box-sizing: border-box;
+}
+
+.fresh {
+  list-style: none;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: center;
+}
+
+.fresh li{
+  padding-inline-end: 1.5rem;
 }
