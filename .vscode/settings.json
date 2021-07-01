@@ -1,4 +1,6 @@
 {
     "editor.defaultFormatter": "HookyQR.beautify",
-    "terminal.integrated.defaultProfile.windows": "Git Bash"
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.automationShell.linux": "",
+    "terminal.integrated.enableBell": true
 }
