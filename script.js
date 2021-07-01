@@ -206,9 +206,9 @@ function seeProjectButton(i) {
   popupCardContent.id = 'popup-content';
   popupMobileCard.appendChild(popupCardContent);
 
-  const popupCardDescriptionContent = document.createElement('p');
-  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
-  popupCardDescriptionContent.className = 'card-text-content';
+  const popupCardDescriptionContent = document.createElement("p");
+  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it but also the leap into electronic typesetting, remaining essent.";
+  popupCardDescriptionContent.className = "card-text-content";
   popupCardContent.appendChild(popupCardDescriptionContent);
 
   const popupCardContentDIV = document.createElement('div');
@@ -334,7 +334,10 @@ window.addEventListener('load', () => {
 function saveData(key, value) {
   if (localStorage.getItem('userInfo')) {
     const oldData = JSON.parse(localStorage.getItem('userInfo'));
-    const newData = { ...oldData, [key]: value };
+    const newData = {
+      ...oldData,
+      [key]: value
+    };
     localStorage.setItem('userInfo', JSON.stringify(newData));
   } else {
     localStorage.setItem('userInfo', userData);

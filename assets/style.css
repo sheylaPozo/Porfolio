@@ -449,7 +449,7 @@ textarea {
 }
 
 .btn-contact {
-   width: 100%;
+  width: 100%;
 }
 
 .dot::before {
@@ -788,6 +788,6 @@ textarea {
   align-content: center;
 }
 
-.fresh li{
+.fresh li {
   padding-inline-end: 1.5rem;
 }
