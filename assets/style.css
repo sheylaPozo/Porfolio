@@ -129,6 +129,11 @@ section .main-text {
   margin-top: 12px;
 }
 
+.error-message {
+  margin: 10px;
+  color: rgb(248, 200, 200);
+}
+
 .cards-project {
   padding-top: 114px;
 }

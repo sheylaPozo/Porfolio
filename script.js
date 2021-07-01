@@ -310,6 +310,7 @@ for (let i = 0; i < myProjects.length; i += 1) {
 const form = document.getElementById("form-contact1");
 const emailInput = document.getElementById("user-email");
 const errorMessage = document.getElementById("error-message");
+const resetBtn = document.getElementById('reset');
 
 form.addEventListener("submit", (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
@@ -317,4 +318,35 @@ form.addEventListener("submit", (e) => {
     errorMessage.textContent =
       "Please, use only lowercase letter for your email!";
   }
+});
+
+window.addEventListener('load', () => {
+  if (localStorage.getItem('userInfo')) {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+    usernameInput.value = userInfo.name;
+    emailInput.value = userInfo.email;
+    messageText.value = userInfo.message;
+  } else {
+    localStorage.setItem('userInfo', userData);
+  }
+});
+
+function saveData(key, value) {
+  if (localStorage.getItem('userInfo')) {
+    const oldData = JSON.parse(localStorage.getItem('userInfo'));
+    const newData = { ...oldData, [key]: value };
+    localStorage.setItem('userInfo', JSON.stringify(newData));
+  } else {
+    localStorage.setItem('userInfo', userData);
+  }
+}
+
+form.addEventListener('input', (evt) => {
+  if (evt.target.dataset.id === 'name' || evt.target.dataset.id === 'email' || evt.target.dataset.id === 'message') {
+    saveData(evt.target.dataset.id, evt.target.value);
+  }
+});
+
+resetBtn.addEventListener('click', () => {
+  localStorage.setItem('userInfo', userData);
 });
