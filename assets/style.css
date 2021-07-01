@@ -779,9 +779,8 @@ textarea {
 
 .fresh {
   list-style: none;
-  display: inline-block;
+  display: inline-flex;
   vertical-align: middle;
-  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: stretch;
