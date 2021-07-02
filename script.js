@@ -329,7 +329,7 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('load', (event) => {
   if (localStorage.getItem('userInfo')) {
     const userInfo = JSON.parse(localStorage.getItem('userInfo'));
     usernameInput.value = userInfo.name;
