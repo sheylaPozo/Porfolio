@@ -777,7 +777,7 @@ textarea {
   box-sizing: border-box;
 }
 
-.fresh {
+.refresh {
   list-style: none;
   display: inline-flex;
   vertical-align: middle;
@@ -787,6 +787,6 @@ textarea {
   align-content: center;
 }
 
-.fresh li {
+.refresh li {
   padding-inline-end: 1.5rem;
 }

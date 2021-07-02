@@ -307,16 +307,25 @@ for (let i = 0; i < myProjects.length; i += 1) {
   });
 }
 
-const form = document.getElementById("form-contact1");
-const emailInput = document.getElementById("user-email");
-const errorMessage = document.getElementById("error-message");
+const userData = JSON.stringify({
+  name: '',
+  email: '',
+  message: '',
+});
+
+const form = document.getElementById('contact-form');
+const usernameInput = document.getElementById('user-name');
+const emailInput = document.getElementById('user-email');
+const messageText = document.getElementById('message');
+const errorMessage = document.getElementById('error-message');
 const resetBtn = document.getElementById('reset');
 
-form.addEventListener("submit", (e) => {
+form.addEventListener('submit', (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
-    errorMessage.textContent =
-      "Please, use only lowercase letter for your email!";
+    errorMessage.textContent = 'Please, use only lowercase letters for your e-mail!';
+  } else {
+    localStorage.setItem('userInfo', userData);
   }
 });
 
@@ -334,10 +343,7 @@ window.addEventListener('load', () => {
 function saveData(key, value) {
   if (localStorage.getItem('userInfo')) {
     const oldData = JSON.parse(localStorage.getItem('userInfo'));
-    const newData = {
-      ...oldData,
-      [key]: value
-    };
+    const newData = { ...oldData, [key]: value };
     localStorage.setItem('userInfo', JSON.stringify(newData));
   } else {
     localStorage.setItem('userInfo', userData);
