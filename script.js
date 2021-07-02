@@ -320,6 +320,27 @@ const messageText = document.getElementById('message');
 const errorMessage = document.getElementById('error-message');
 const resetBtn = document.getElementById('reset');
 
+function populateFormData(value, itemName) {
+  if (itemName === 'user-name') {
+    formData.inputName = value;
+  } else if (itemName === 'user-email') {
+    formData.inputEmail = value;
+  } else if (itemName === 'message') {
+    formData.inputMessage = value;
+  } else {
+    throw new Error('Invalid attribute name for given value');
+  }
+}
+username.addEventListener('change', (event) => {
+  populateFormData(event.target.value, 'user-name');
+});
+email.addEventListener('change', (event) => {
+  populateFormData(event.target.value, 'user-email');
+});
+msg.addEventListener('change', (event) => {
+  populateFormData(event.target.value, 'message');
+});
+
 form.addEventListener('submit', (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
@@ -329,33 +350,4 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-window.addEventListener('load', (event) => {
-  if (localStorage.getItem('userInfo')) {
-    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
-    usernameInput.value = userInfo.name;
-    emailInput.value = userInfo.email;
-    messageText.value = userInfo.message;
-  } else {
-    localStorage.setItem('userInfo', userData);
-  }
-});
 
-function saveData(key, value) {
-  if (localStorage.getItem('userInfo')) {
-    const oldData = JSON.parse(localStorage.getItem('userInfo'));
-    const newData = { ...oldData, [key]: value };
-    localStorage.setItem('userInfo', JSON.stringify(newData));
-  } else {
-    localStorage.setItem('userInfo', userData);
-  }
-}
-
-form.addEventListener('input', (evt) => {
-  if (evt.target.dataset.id === 'name' || evt.target.dataset.id === 'email' || evt.target.dataset.id === 'message') {
-    saveData(evt.target.dataset.id, evt.target.value);
-  }
-});
-
-resetBtn.addEventListener('click', () => {
-  localStorage.setItem('userInfo', userData);
-});
