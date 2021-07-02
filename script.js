@@ -206,9 +206,9 @@ function seeProjectButton(i) {
   popupCardContent.id = 'popup-content';
   popupMobileCard.appendChild(popupCardContent);
 
-  const popupCardDescriptionContent = document.createElement('p');
-  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea";
-  popupCardDescriptionContent.className = 'card-text-content';
+  const popupCardDescriptionContent = document.createElement("p");
+  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it but also the leap into electronic typesetting, remaining essent.";
+  popupCardDescriptionContent.className = "card-text-content";
   popupCardContent.appendChild(popupCardDescriptionContent);
 
   const popupCardContentDIV = document.createElement('div');
@@ -307,14 +307,47 @@ for (let i = 0; i < myProjects.length; i += 1) {
   });
 }
 
-const form = document.getElementById("form-contact1");
-const emailInput = document.getElementById("user-email");
-const errorMessage = document.getElementById("error-message");
+const userData = JSON.stringify({
+  name: '',
+  email: '',
+  message: '',
+});
 
-form.addEventListener("submit", (e) => {
+const form = document.getElementById('contact-form');
+const usernameInput = document.getElementById('user-name');
+const emailInput = document.getElementById('user-email');
+const messageText = document.getElementById('message');
+const errorMessage = document.getElementById('error-message');
+const resetBtn = document.getElementById('reset');
+
+function populateFormData(value, itemName) {
+  if (itemName === 'user-name') {
+    formData.inputName = value;
+  } else if (itemName === 'user-email') {
+    formData.inputEmail = value;
+  } else if (itemName === 'message') {
+    formData.inputMessage = value;
+  } else {
+    throw new Error('Invalid attribute name for given value');
+  }
+}
+username.addEventListener('change', (event) => {
+  populateFormData(event.target.value, 'user-name');
+});
+email.addEventListener('change', (event) => {
+  populateFormData(event.target.value, 'user-email');
+});
+msg.addEventListener('change', (event) => {
+  populateFormData(event.target.value, 'message');
+});
+
+form.addEventListener('submit', (e) => {
   if (emailInput.value.toLowerCase() !== emailInput.value) {
     e.preventDefault();
-    errorMessage.textContent =
-      "Please, use only lowercase letter for your email!";
+    errorMessage.textContent = 'Please, use only lowercase letters for your e-mail!';
+  } else {
+    localStorage.setItem('userInfo', userData);
   }
 });
+
+
