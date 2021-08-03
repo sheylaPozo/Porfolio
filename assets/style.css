@@ -24,10 +24,10 @@ body {
   background-color: #fff;
   margin-bottom: 12px;
   display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 48px;
-    margin-left:200px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 48px;
+  margin-left: 200px;
 }
 
 .menu-style {
@@ -149,6 +149,10 @@ section .main-text {
 
 .cards-project {
   padding-top: 114px;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  transition: transform 1s;
 }
 
 .cards-project-list {
@@ -166,6 +170,11 @@ section .main-text {
   box-sizing: border-box;
   border-radius: 16px;
   padding: 16px;
+}
+
+.card :hover {
+  transform: scale(1.06);
+  transition-duration: 1s;
 }
 
 .card img:not(:last-child) {
