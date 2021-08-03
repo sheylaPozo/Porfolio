@@ -97,13 +97,13 @@ const myProjects = [];
 
 myProjects.push(
   new ProjectCard(
-    './img/img1.png',
+    'https://user-images.githubusercontent.com/54015740/128005902-fe3809e2-f8a3-4618-8ff8-18d1cc7da538.png',
     'Name of Project',
-    'Tonic',
-    'CANOPY',
+    'Yve´s konditorei',
+    'Microverse',
     'Back End Dev',
-    '2015',
-    'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    '2021',
+    'A daily selection of Sweets; Yve´s konditorei a world-class Bakery with all you would want to taste.',
     ['html', 'css', 'javaScript'],
   ),
 );
@@ -282,7 +282,7 @@ for (let i = 0; i < myProjects.length; i += 1) {
   cardDescription.appendChild(cardSpanTwo);
 
   const cardDescriptionContent = document.createElement('p');
-  cardDescriptionContent.textContent = 'A daily selection of privately personalized reads; no accounts or sign-ups required.';
+  cardDescriptionContent.textContent = 'A daily selection of Sweets; Yve´s konditorei a world-class Bakery with all you would want to taste.';
   cardDescriptionContent.className = 'card-text-content';
   cardContent.appendChild(cardDescriptionContent);
 
