@@ -17,6 +17,19 @@ body {
   position: relative;
 }
 
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: #fff;
+  margin-bottom: 12px;
+  display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 48px;
+    margin-left:250px;
+}
+
 .menu-style {
   display: none;
   position: fixed;
@@ -104,7 +117,7 @@ header nav ul {
 
 .section-top {
   margin: 0 24px 136px 24px;
-  padding-top: 128px;
+  padding-top: 12px;
 }
 
 .section-title {
