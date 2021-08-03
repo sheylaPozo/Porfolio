@@ -232,14 +232,14 @@ function seeProjectButton(i) {
   const popupButtonLiveLink = document.createElement('a');
   popupButtonLiveLink.className = 'btn-project';
   popupButtonLiveLink.textContent = 'See Live';
-  popupButtonLiveLink.href = 'https://sheylapozo.github.io/Porfolio/';
+  popupButtonLiveLink.href = 'https://sheylapozo.github.io/Capstone-Bakery/';
   popupButtonDIV.appendChild(popupButtonLiveLink);
   const popupButtonLiveIcon = document.createElement('img');
   popupButtonLiveIcon.src = './img/icon-live.png';
   popupButtonLiveLink.appendChild(popupButtonLiveIcon);
   const popupButtonGithubLink = document.createElement('a');
   popupButtonGithubLink.textContent = 'See Source';
-  popupButtonGithubLink.href = 'https://github.com/sheylaPozo';
+  popupButtonGithubLink.href = 'https://github.com/sheylaPozo/Capstone-Bakery';
   popupButtonGithubLink.className = 'btn-project';
   popupButtonDIV.appendChild(popupButtonGithubLink);
   const popupButtonGithubIcon = document.createElement('img');
