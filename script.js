@@ -97,7 +97,7 @@ const myProjects = [];
 
 myProjects.push(
   new ProjectCard(
-    'https://user-images.githubusercontent.com/54015740/128005902-fe3809e2-f8a3-4618-8ff8-18d1cc7da538.png',
+    'https://user-images.githubusercontent.com/54015740/128008554-c9a9d333-7451-4456-b867-3e429a0c6fd4.png',
     'Name of Project',
     'Yve´s konditorei',
     'Microverse',
