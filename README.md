@@ -1,6 +1,6 @@
 ![Microverse](https://img.shields.io/badge/Microverse-blueviolet)
 ---
-![My-Portfolio](https://img.shields.io/badge/My-Porfolio-blueviolet)![Portfolio](https://img.shields.io/github/followers/sheylaPozo?style=social)
+![MyPortfolio](https://img.shields.io/badge/My-Porfolio-pink)![Portfolio](https://img.shields.io/github/followers/sheylaPozo?style=social)
 
 ## My Portfolio 💖
 
