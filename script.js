@@ -349,5 +349,3 @@ form.addEventListener('submit', (e) => {
     localStorage.setItem('userInfo', userData);
   }
 });
-
-
