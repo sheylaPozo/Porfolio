@@ -210,6 +210,11 @@ section .main-text {
   margin-top: 20px;
 }
 
+.card .card-description:hover {
+  transform: scale(1.06);
+  transition-duration: 1s;
+}
+
 .card span {
   color: #7a869a;
   font-family: "Poppins", sans-serif;
