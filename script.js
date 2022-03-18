@@ -110,13 +110,13 @@ myProjects.push(
 
 myProjects.push(
   new ProjectCard(
-    './img/img4.png',
+    'https://user-images.githubusercontent.com/54015740/143592111-fb31f0f8-bb71-414e-afd0-b30eebb2d221.png',
     'Name of Project',
-    'Multi-Post Stories',
-    'FACEBOOK',
+    'Recipe App',
+    'Microverse',
     'Full Stack Dev',
-    '2015',
-    'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    '2021',
+    'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list.',
     ['html', 'css', 'javaScript'],
   ),
 );
@@ -207,7 +207,7 @@ function seeProjectButton(i) {
   popupMobileCard.appendChild(popupCardContent);
 
   const popupCardDescriptionContent = document.createElement("p");
-  popupCardDescriptionContent.textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it but also the leap into electronic typesetting, remaining essent.";
+  popupCardDescriptionContent.textContent = "A daily selection of Sweets; Yve´s konditorei a world-class Bakery with all you would want to taste..";
   popupCardDescriptionContent.className = "card-text-content";
   popupCardContent.appendChild(popupCardDescriptionContent);
 
