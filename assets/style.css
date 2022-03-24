@@ -514,7 +514,7 @@ textarea {
   margin: 0 7px;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 924px) {
   main {
     height: 90vh;
     background-image: none;
@@ -618,7 +618,7 @@ textarea {
   }
 
   .card .card-image1 {
-    content: url("../img/desktop-img2.png");
+    content: url("https://user-images.githubusercontent.com/54015740/143592111-fb31f0f8-bb71-414e-afd0-b30eebb2d221.png");
   }
 
   .card .card-image2 {

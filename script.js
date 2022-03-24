@@ -117,7 +117,7 @@ myProjects.push(
     'Full Stack Dev',
     '2021',
     'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list.',
-    ['html', 'css', 'javaScript'],
+    ['html', 'css', 'javaScript', 'React', 'PostgreSql'],
   ),
 );
 
@@ -207,7 +207,7 @@ function seeProjectButton(i) {
   popupMobileCard.appendChild(popupCardContent);
 
   const popupCardDescriptionContent = document.createElement("p");
-  popupCardDescriptionContent.textContent = "A daily selection of Sweets; Yve´s konditorei a world-class Bakery with all you would want to taste..";
+  popupCardDescriptionContent.textContent = "A daily selection of Sweets; Yve´s konditorei a world-class Bakery with all you would want to taste.";
   popupCardDescriptionContent.className = "card-text-content";
   popupCardContent.appendChild(popupCardDescriptionContent);
 
@@ -282,7 +282,7 @@ for (let i = 0; i < myProjects.length; i += 1) {
   cardDescription.appendChild(cardSpanTwo);
 
   const cardDescriptionContent = document.createElement('p');
-  cardDescriptionContent.textContent = 'A daily selection of Sweets; Yve´s konditorei a world-class Bakery with all you would want to taste.';
+  cardDescriptionContent.textContent = 'A daily selection of Sweets; Yve´s konditorei a world-class Bakery with all you would want to taste';
   cardDescriptionContent.className = 'card-text-content';
   cardContent.appendChild(cardDescriptionContent);
 
